@@ -9,7 +9,7 @@
         <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>AbsoluteLayout</artifactId>
-            <version>RELEASE126</version>
+            <version>RELEASE125</version>
         </dependency>
     </dependencies>
     <properties>
@@ -17,4 +17,5 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+    <name>projetoPI2</name>
 </project>

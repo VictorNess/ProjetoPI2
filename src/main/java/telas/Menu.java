@@ -11,7 +11,7 @@ package telas;
 public class Menu extends javax.swing.JFrame {
 
     /**
-     * Creates new form telaVenda
+     * Creates new form Menu
      */
     public Menu() {
         initComponents();
@@ -26,61 +26,115 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        mnuInternoConsCliente = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        mnuConsCliente = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        mnuConsProduto = new javax.swing.JMenu();
-        mnuEfetCompra = new javax.swing.JMenu();
+        MnuInterno = new javax.swing.JDesktopPane();
+        mnuConsProd = new javax.swing.JMenuBar();
+        mnuCliente = new javax.swing.JMenu();
+        mnuInternoConsCli = new javax.swing.JMenuItem();
+        mnuInternoInsCli = new javax.swing.JMenuItem();
+        mnuProduto = new javax.swing.JMenu();
+        mnuInternoConsProd = new javax.swing.JMenuItem();
+        mnuInternoInsProd = new javax.swing.JMenuItem();
+        mnuPedido = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout mnuInternoConsClienteLayout = new javax.swing.GroupLayout(mnuInternoConsCliente);
-        mnuInternoConsCliente.setLayout(mnuInternoConsClienteLayout);
-        mnuInternoConsClienteLayout.setHorizontalGroup(
-            mnuInternoConsClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout MnuInternoLayout = new javax.swing.GroupLayout(MnuInterno);
+        MnuInterno.setLayout(MnuInternoLayout);
+        MnuInternoLayout.setHorizontalGroup(
+            MnuInternoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 800, Short.MAX_VALUE)
         );
-        mnuInternoConsClienteLayout.setVerticalGroup(
-            mnuInternoConsClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 580, Short.MAX_VALUE)
+        MnuInternoLayout.setVerticalGroup(
+            MnuInternoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 579, Short.MAX_VALUE)
         );
 
-        getContentPane().add(mnuInternoConsCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 580));
+        mnuCliente.setText("Cliente");
 
-        mnuConsCliente.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        mnuConsCliente.setText("Consultar Cliente");
-
-        jMenuItem1.setText("Consultar/Cadastrar");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        mnuInternoConsCli.setText("Consultar");
+        mnuInternoConsCli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                mnuInternoConsCliActionPerformed(evt);
             }
         });
-        mnuConsCliente.add(jMenuItem1);
+        mnuCliente.add(mnuInternoConsCli);
 
-        jMenuBar1.add(mnuConsCliente);
+        mnuInternoInsCli.setText("Inserir");
+        mnuInternoInsCli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoInsCliActionPerformed(evt);
+            }
+        });
+        mnuCliente.add(mnuInternoInsCli);
 
-        mnuConsProduto.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        mnuConsProduto.setText("Consultar Produto");
-        jMenuBar1.add(mnuConsProduto);
+        mnuConsProd.add(mnuCliente);
 
-        mnuEfetCompra.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        mnuEfetCompra.setText("Efetuar  compra");
-        jMenuBar1.add(mnuEfetCompra);
+        mnuProduto.setText("Produto");
 
-        setJMenuBar(jMenuBar1);
+        mnuInternoConsProd.setText("Consultar");
+        mnuInternoConsProd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoConsProdActionPerformed(evt);
+            }
+        });
+        mnuProduto.add(mnuInternoConsProd);
+
+        mnuInternoInsProd.setText("Inserir");
+        mnuInternoInsProd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoInsProdActionPerformed(evt);
+            }
+        });
+        mnuProduto.add(mnuInternoInsProd);
+
+        mnuConsProd.add(mnuProduto);
+
+        mnuPedido.setText("Pedido");
+        mnuConsProd.add(mnuPedido);
+
+        setJMenuBar(mnuConsProd);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MnuInterno)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MnuInterno)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-         mnuInternoConsCliente consultarCliente = new mnuInternoConsCliente();
-        consultarCliente.setVisible(true);
+    private void mnuInternoConsCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoConsCliActionPerformed
+        MnuInternoConsCliente tela = new MnuInternoConsCliente();
+        tela.setVisible(true);
         
-        this.mnuInternoConsCliente.add(consultarCliente);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+        this.MnuInterno.add(tela);
+    }//GEN-LAST:event_mnuInternoConsCliActionPerformed
+
+    private void mnuInternoInsCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoInsCliActionPerformed
+        MnuInternoInsCliente tela = new MnuInternoInsCliente();
+        tela.setVisible(true);
+        
+        this.MnuInterno.add(tela);
+    }//GEN-LAST:event_mnuInternoInsCliActionPerformed
+
+    private void mnuInternoConsProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoConsProdActionPerformed
+        MnuInternoConsProduto tela = new MnuInternoConsProduto();
+        tela.setVisible(true);
+        
+        this.MnuInterno.add(tela);
+    }//GEN-LAST:event_mnuInternoConsProdActionPerformed
+
+    private void mnuInternoInsProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoInsProdActionPerformed
+        MnuInternoInsProduto tela = new MnuInternoInsProduto();
+        tela.setVisible(true);
+        
+        this.MnuInterno.add(tela);
+    }//GEN-LAST:event_mnuInternoInsProdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -108,7 +162,6 @@ public class Menu extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -119,11 +172,14 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenu mnuConsCliente;
-    private javax.swing.JMenu mnuConsProduto;
-    private javax.swing.JMenu mnuEfetCompra;
-    private javax.swing.JDesktopPane mnuInternoConsCliente;
+    private javax.swing.JDesktopPane MnuInterno;
+    private javax.swing.JMenu mnuCliente;
+    private javax.swing.JMenuBar mnuConsProd;
+    private javax.swing.JMenuItem mnuInternoConsCli;
+    private javax.swing.JMenuItem mnuInternoConsProd;
+    private javax.swing.JMenuItem mnuInternoInsCli;
+    private javax.swing.JMenuItem mnuInternoInsProd;
+    private javax.swing.JMenu mnuPedido;
+    private javax.swing.JMenu mnuProduto;
     // End of variables declaration//GEN-END:variables
 }
