@@ -118,7 +118,7 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
-        jLabel2.setText("Informe os dados do cliente para prosseguir com a conculta:");
+        jLabel2.setText("Informe os dados do cliente para prosseguir com a consulta:");
 
         jLabel3.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jLabel3.setText("Nome:");
@@ -230,7 +230,7 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -258,7 +258,7 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnConsultarActionPerformed
 
     private void btnDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletarActionPerformed
-        int i = JOptionPane.showConfirmDialog(null, "Deseja deletar o cliente selecionado?");
+        int i = JOptionPane.showConfirmDialog(null, "Deseja deletar o pedido selecionado?");
         retornoJopionPane(i);
     }//GEN-LAST:event_btnDeletarActionPerformed
 

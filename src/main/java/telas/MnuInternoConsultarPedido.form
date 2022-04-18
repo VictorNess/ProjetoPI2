@@ -195,7 +195,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cambria" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Informe os dados do cliente para prosseguir com a conculta:"/>
+            <Property name="text" type="java.lang.String" value="Informe os dados do cliente para prosseguir com a consulta:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
