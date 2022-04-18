@@ -271,14 +271,7 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
             dispose();
         }
 
-        else {
-            MnuInternoConsultarPedido tela = new MnuInternoConsultarPedido();
-            tela.setVisible(true);
             dispose();
-
-            //Fecha o JFrame de trás
-            dispose();
-        }
     }//GEN-LAST:event_btnAlterarActionPerformed
 
     private void cmpNomeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cmpNomeKeyTyped

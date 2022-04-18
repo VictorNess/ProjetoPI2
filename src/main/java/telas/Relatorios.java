@@ -28,17 +28,6 @@ public class Relatorios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        txtNomeCliente = new javax.swing.JFormattedTextField();
-        jLabel5 = new javax.swing.JLabel();
-        txtNomeCliente1 = new javax.swing.JFormattedTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jDateFinal = new org.netbeans.modules.form.InvalidComponent();
-        jDateInicio1 = new org.netbeans.modules.form.InvalidComponent();
-        btngerarSintetico = new javax.swing.JButton();
-        btngerarAnalitico = new javax.swing.JButton();
         MnuInterno = new javax.swing.JDesktopPane();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -48,82 +37,11 @@ public class Relatorios extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         cmpNome = new javax.swing.JFormattedTextField();
         cmpCPF = new javax.swing.JFormattedTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser3 = new com.toedter.calendar.JDateChooser();
         jDateChooser2 = new com.toedter.calendar.JDateChooser();
         btnAnalitico = new javax.swing.JButton();
         btnSair = new javax.swing.JButton();
         btnSintetico1 = new javax.swing.JButton();
-
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Nome:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, 57, -1));
-
-        txtNomeCliente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeClienteActionPerformed(evt);
-            }
-        });
-        txtNomeCliente.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtNomeClienteKeyTyped(evt);
-            }
-        });
-        jPanel1.add(txtNomeCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 30, 450, 28));
-
-        jLabel5.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("CPF:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 74, 57, -1));
-
-        txtNomeCliente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeCliente1ActionPerformed(evt);
-            }
-        });
-        txtNomeCliente1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtNomeCliente1KeyTyped(evt);
-            }
-        });
-        jPanel1.add(txtNomeCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 69, 450, 28));
-
-        jLabel6.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Data inicio:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Book Antiqua", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Data fim:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, -1, -1));
-        jPanel1.add(jDateFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, 140, 30));
-        jPanel1.add(jDateInicio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 140, 30));
-
-        btngerarSintetico.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btngerarSintetico.setText("Sintético");
-        btngerarSintetico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btngerarSinteticoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btngerarSintetico, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, 155, -1));
-
-        btngerarAnalitico.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        btngerarAnalitico.setText("Analítico");
-        btngerarAnalitico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btngerarAnaliticoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btngerarAnalitico, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, 155, -1));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -186,8 +104,8 @@ public class Relatorios extends javax.swing.JFrame {
             }
         });
         jPanel2.add(cmpCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 240, 30));
-        jPanel2.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, -1, -1));
-        jPanel2.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, -1, -1));
+        jPanel2.add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, -1, -1));
+        jPanel2.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 30, -1, -1));
 
         btnAnalitico.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btnAnalitico.setText("Analítico");
@@ -268,41 +186,10 @@ public class Relatorios extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeClienteActionPerformed
-
-    }//GEN-LAST:event_txtNomeClienteActionPerformed
-
-    private void txtNomeClienteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNomeClienteKeyTyped
-        String numero = "1234567890!@#$%&*()";
-
-        if (numero.contains(evt.getKeyChar() + "")) {
-            evt.consume();
-            this.txtNomeCliente.setBackground(Color.red);
-        } else {
-            this.txtNomeCliente.setBackground(Color.white);
-        }
-    }//GEN-LAST:event_txtNomeClienteKeyTyped
-
-    private void txtNomeCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeCliente1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeCliente1ActionPerformed
-
-    private void txtNomeCliente1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNomeCliente1KeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeCliente1KeyTyped
-
-    private void btngerarSinteticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngerarSinteticoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btngerarSinteticoActionPerformed
-
-    private void btngerarAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngerarAnaliticoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btngerarAnaliticoActionPerformed
-
-    private void btnAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnaliticoActionPerformed
-        RelatorioAnalitico obj = new RelatorioAnalitico();
+    private void btnSintetico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSintetico1ActionPerformed
+        RelatorioSintetico obj = new RelatorioSintetico();
         obj.setVisible(true);
-    }//GEN-LAST:event_btnAnaliticoActionPerformed
+    }//GEN-LAST:event_btnSintetico1ActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         telaInicial obj = new telaInicial();
@@ -310,14 +197,20 @@ public class Relatorios extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnSairActionPerformed
 
-    private void btnSintetico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSintetico1ActionPerformed
-        RelatorioSintetico obj = new RelatorioSintetico();
-        obj.setVisible(true);
-    }//GEN-LAST:event_btnSintetico1ActionPerformed
+    private void cmpCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cmpCPFKeyTyped
+        String letra = "1234567890!@#$%&*()";
 
-    private void cmpNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmpNomeActionPerformed
+        if (!letra.contains(evt.getKeyChar() + "")) {
+            evt.consume();
+            this.cmpCPF.setBackground(Color.red);
+        } else {
+            this.cmpCPF.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_cmpCPFKeyTyped
 
-    }//GEN-LAST:event_cmpNomeActionPerformed
+    private void cmpCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmpCPFActionPerformed
+
+    }//GEN-LAST:event_cmpCPFActionPerformed
 
     private void cmpNomeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cmpNomeKeyTyped
         String numero = "1234567890!@#$%&*()";
@@ -330,20 +223,14 @@ public class Relatorios extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cmpNomeKeyTyped
 
-    private void cmpCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmpCPFActionPerformed
+    private void cmpNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmpNomeActionPerformed
 
-    }//GEN-LAST:event_cmpCPFActionPerformed
+    }//GEN-LAST:event_cmpNomeActionPerformed
 
-    private void cmpCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cmpCPFKeyTyped
-        String letra = "1234567890!@#$%&*()";
-
-        if (!letra.contains(evt.getKeyChar() + "")) {
-            evt.consume();
-            this.cmpCPF.setBackground(Color.red);
-        } else {
-            this.cmpCPF.setBackground(Color.white);
-        }
-    }//GEN-LAST:event_cmpCPFKeyTyped
+    private void btnAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnaliticoActionPerformed
+        RelatorioAnalitico obj = new RelatorioAnalitico();
+        obj.setVisible(true);
+    }//GEN-LAST:event_btnAnaliticoActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -383,26 +270,15 @@ public class Relatorios extends javax.swing.JFrame {
     private javax.swing.JButton btnAnalitico;
     private javax.swing.JButton btnSair;
     private javax.swing.JButton btnSintetico1;
-    private javax.swing.JButton btngerarAnalitico;
-    private javax.swing.JButton btngerarSintetico;
     private javax.swing.JFormattedTextField cmpCPF;
     private javax.swing.JFormattedTextField cmpNome;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser2;
-    private org.netbeans.modules.form.InvalidComponent jDateFinal;
-    private org.netbeans.modules.form.InvalidComponent jDateInicio1;
+    private com.toedter.calendar.JDateChooser jDateChooser3;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JFormattedTextField txtNomeCliente;
-    private javax.swing.JFormattedTextField txtNomeCliente1;
     // End of variables declaration//GEN-END:variables
 }
