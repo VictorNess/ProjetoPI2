@@ -4,6 +4,8 @@
  */
 package aplicacao;
 
+import telas.RelatorioAnalitico;
+
 /**
  *
  * @author Camilly
@@ -34,12 +36,12 @@ public class Menu extends javax.swing.JFrame {
         mnuProduto = new javax.swing.JMenu();
         mnuInternoConsProd = new javax.swing.JMenuItem();
         mnuInternoInsProd = new javax.swing.JMenuItem();
-        mnuRelatorios = new javax.swing.JMenu();
-        mnuInternoReAnalitico = new javax.swing.JMenuItem();
-        mnuInternoReSintetico = new javax.swing.JMenuItem();
         mnuPedido = new javax.swing.JMenu();
         mnuInternoInserirPedido = new javax.swing.JMenuItem();
         mnuInternoConsultarPedido = new javax.swing.JMenuItem();
+        mnuRelatorios = new javax.swing.JMenu();
+        mnuInternoReAnalitico = new javax.swing.JMenuItem();
+        mnuInternoReSintetico = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SPEED SHOES");
@@ -51,11 +53,11 @@ public class Menu extends javax.swing.JFrame {
         MnuInterno.setLayout(MnuInternoLayout);
         MnuInternoLayout.setHorizontalGroup(
             MnuInternoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 820, Short.MAX_VALUE)
+            .addGap(0, 800, Short.MAX_VALUE)
         );
         MnuInternoLayout.setVerticalGroup(
             MnuInternoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
+            .addGap(0, 577, Short.MAX_VALUE)
         );
 
         mnuCliente.setText("Cliente");
@@ -98,21 +100,6 @@ public class Menu extends javax.swing.JFrame {
 
         mnuConsProd.add(mnuProduto);
 
-        mnuRelatorios.setText("Relatórios");
-
-        mnuInternoReAnalitico.setText("Analítico");
-        mnuRelatorios.add(mnuInternoReAnalitico);
-
-        mnuInternoReSintetico.setText("Sintético");
-        mnuInternoReSintetico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuInternoReSinteticoActionPerformed(evt);
-            }
-        });
-        mnuRelatorios.add(mnuInternoReSintetico);
-
-        mnuConsProd.add(mnuRelatorios);
-
         mnuPedido.setText("Pedido");
 
         mnuInternoInserirPedido.setText("Inserir");
@@ -132,6 +119,26 @@ public class Menu extends javax.swing.JFrame {
         mnuPedido.add(mnuInternoConsultarPedido);
 
         mnuConsProd.add(mnuPedido);
+
+        mnuRelatorios.setText("Relatórios");
+
+        mnuInternoReAnalitico.setText("Analítico");
+        mnuInternoReAnalitico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoReAnaliticoActionPerformed(evt);
+            }
+        });
+        mnuRelatorios.add(mnuInternoReAnalitico);
+
+        mnuInternoReSintetico.setText("Sintético");
+        mnuInternoReSintetico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoReSinteticoActionPerformed(evt);
+            }
+        });
+        mnuRelatorios.add(mnuInternoReSintetico);
+
+        mnuConsProd.add(mnuRelatorios);
 
         setJMenuBar(mnuConsProd);
 
@@ -192,8 +199,18 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuInternoInserirPedidoActionPerformed
 
     private void mnuInternoReSinteticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoReSinteticoActionPerformed
-        // TODO add your handling code here:
+        MnuInternoRelatorioSintetico tela = new MnuInternoRelatorioSintetico();
+        tela.setVisible(true);
+        
+        this.MnuInterno.add(tela);
     }//GEN-LAST:event_mnuInternoReSinteticoActionPerformed
+
+    private void mnuInternoReAnaliticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoReAnaliticoActionPerformed
+        MnuInternoRelatorioAnalitico tela = new MnuInternoRelatorioAnalitico();
+        tela.setVisible(true);
+        
+        this.MnuInterno.add(tela);
+    }//GEN-LAST:event_mnuInternoReAnaliticoActionPerformed
 
     /**
      * @param args the command line arguments

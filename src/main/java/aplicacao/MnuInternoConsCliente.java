@@ -357,7 +357,7 @@ public class MnuInternoConsCliente extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnAlterarActionPerformed
 
     private void btnCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompraActionPerformed
-        MnuInternoInserirPedido tela = new MnuInternoInserirPedido();
+        MnuInternoRelatorioAnalitico tela = new MnuInternoRelatorioAnalitico();
         getParent().add(tela);
         tela.setVisible(true);
         dispose();

@@ -107,11 +107,7 @@ public class telaInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRelatoriosActionPerformed
-        Relatorios telaRelatorios = new Relatorios();
-        telaRelatorios.setVisible(true);
-
-        //Fecha o JFrame de trás
-        dispose();
+ 
     }//GEN-LAST:event_btnRelatoriosActionPerformed
 
     /**

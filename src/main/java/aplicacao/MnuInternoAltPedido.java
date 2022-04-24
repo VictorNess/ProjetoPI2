@@ -51,6 +51,7 @@ public class MnuInternoAltPedido extends javax.swing.JInternalFrame {
         txtnomeCliente1 = new javax.swing.JLabel();
         txttelCliente = new javax.swing.JLabel();
         txtemailCliente = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -248,6 +249,14 @@ public class MnuInternoAltPedido extends javax.swing.JInternalFrame {
         txtemailCliente.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, java.awt.Color.white, null, null));
         txtemailCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        btnCancelar.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
+        btnCancelar.setText("Excluir");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -267,7 +276,8 @@ public class MnuInternoAltPedido extends javax.swing.JInternalFrame {
                             .addComponent(btnAdiconar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtValorTotal)
-                            .addComponent(btnAlterarPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnAlterarPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(33, 33, 33))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -324,6 +334,8 @@ public class MnuInternoAltPedido extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnAdiconar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -359,7 +371,6 @@ public class MnuInternoAltPedido extends javax.swing.JInternalFrame {
 
     private void btnAlterarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarPedidoActionPerformed
         showMessageDialog(this, "Compra alterada com sucesso!");
-        dispose();
     }//GEN-LAST:event_btnAlterarPedidoActionPerformed
 
     private void cmpProcuraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmpProcuraActionPerformed
@@ -382,10 +393,15 @@ public class MnuInternoAltPedido extends javax.swing.JInternalFrame {
             + " Favor inseri-lo");
     }//GEN-LAST:event_btnProcurar1ActionPerformed
 
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        int i = JOptionPane.showConfirmDialog(null, "Deseja cancelar a compra deste produto?");
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdiconar;
     private javax.swing.JButton btnAlterarPedido;
+    private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnProcurar1;
     private javax.swing.JTextField cmpProcura;
     private javax.swing.JLabel jLabel1;

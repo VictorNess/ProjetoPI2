@@ -258,8 +258,10 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnConsultarActionPerformed
 
     private void btnDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletarActionPerformed
-        int i = JOptionPane.showConfirmDialog(null, "Deseja deletar o cliente selecionado?");
-        retornoJopionPane(i);
+        int i = JOptionPane.showConfirmDialog(null, "Deseja deletar pedido selecionado?");
+                if (i == 0) {
+           JOptionPane.showMessageDialog(this, "Produto deletado com sucesso!");
+        }
     }//GEN-LAST:event_btnDeletarActionPerformed
 
     private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed
@@ -270,8 +272,6 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
             tela.setVisible(true);
             dispose();
         }
-
-            dispose();
     }//GEN-LAST:event_btnAlterarActionPerformed
 
     private void cmpNomeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cmpNomeKeyTyped
@@ -304,15 +304,4 @@ public class MnuInternoConsultarPedido extends javax.swing.JInternalFrame {
     private javax.swing.JTable tblInserir;
     // End of variables declaration//GEN-END:variables
 
-    private void retornoJopionPane(int i) {
-        if (i == 0) {
-           JOptionPane.showMessageDialog(this, "Produto deletado com sucesso!");
-        } else if (i == 1) {
-            MnuInternoConsultarPedido tela = new MnuInternoConsultarPedido();
-            tela.setVisible(true);
-
-            //Fecha o JFrame de trás
-            dispose();
-        }
-    }
 }

@@ -4,6 +4,8 @@
  */
 package telas;
 
+import aplicacao.MnuInternoRelatorioSintetico;
+
 /**
  *
  * @author Camilly
@@ -163,7 +165,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuInternoConsultarPedidoActionPerformed
 
     private void mnuInternoInserirPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoInserirPedidoActionPerformed
-        MnuInternoInserirPedido tela = new MnuInternoInserirPedido();
+        MnuInternoRelatorioSintetico tela = new MnuInternoRelatorioSintetico();
         tela.setVisible(true);
 
         this.MnuInterno.add(tela);    // TODO add your handling code here:
