@@ -60,7 +60,7 @@ public class Main {
         String endereco;
         String email;
         String sexo;
-        int datNac;
+        Date datNac;
         String estCivil;
         int telefone;
 
