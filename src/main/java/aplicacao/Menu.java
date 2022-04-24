@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package telas;
+package aplicacao;
 
 /**
  *
@@ -34,15 +34,24 @@ public class Menu extends javax.swing.JFrame {
         mnuProduto = new javax.swing.JMenu();
         mnuInternoConsProd = new javax.swing.JMenuItem();
         mnuInternoInsProd = new javax.swing.JMenuItem();
+        mnuRelatorios = new javax.swing.JMenu();
+        mnuInternoReAnalitico = new javax.swing.JMenuItem();
+        mnuInternoReSintetico = new javax.swing.JMenuItem();
         mnuPedido = new javax.swing.JMenu();
+        mnuInternoInserirPedido = new javax.swing.JMenuItem();
+        mnuInternoConsultarPedido = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SPEED SHOES");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout MnuInternoLayout = new javax.swing.GroupLayout(MnuInterno);
         MnuInterno.setLayout(MnuInternoLayout);
         MnuInternoLayout.setHorizontalGroup(
             MnuInternoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGap(0, 820, Short.MAX_VALUE)
         );
         MnuInternoLayout.setVerticalGroup(
             MnuInternoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,7 +98,39 @@ public class Menu extends javax.swing.JFrame {
 
         mnuConsProd.add(mnuProduto);
 
+        mnuRelatorios.setText("Relatórios");
+
+        mnuInternoReAnalitico.setText("Analítico");
+        mnuRelatorios.add(mnuInternoReAnalitico);
+
+        mnuInternoReSintetico.setText("Sintético");
+        mnuInternoReSintetico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoReSinteticoActionPerformed(evt);
+            }
+        });
+        mnuRelatorios.add(mnuInternoReSintetico);
+
+        mnuConsProd.add(mnuRelatorios);
+
         mnuPedido.setText("Pedido");
+
+        mnuInternoInserirPedido.setText("Inserir");
+        mnuInternoInserirPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoInserirPedidoActionPerformed(evt);
+            }
+        });
+        mnuPedido.add(mnuInternoInserirPedido);
+
+        mnuInternoConsultarPedido.setText("Consultar");
+        mnuInternoConsultarPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuInternoConsultarPedidoActionPerformed(evt);
+            }
+        });
+        mnuPedido.add(mnuInternoConsultarPedido);
+
         mnuConsProd.add(mnuPedido);
 
         setJMenuBar(mnuConsProd);
@@ -136,6 +177,24 @@ public class Menu extends javax.swing.JFrame {
         this.MnuInterno.add(tela);
     }//GEN-LAST:event_mnuInternoInsProdActionPerformed
 
+    private void mnuInternoConsultarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoConsultarPedidoActionPerformed
+        MnuInternoConsultarPedido tela = new MnuInternoConsultarPedido();
+        tela.setVisible(true);
+
+        this.MnuInterno.add(tela);
+    }//GEN-LAST:event_mnuInternoConsultarPedidoActionPerformed
+
+    private void mnuInternoInserirPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoInserirPedidoActionPerformed
+        MnuInternoInserirPedido tela = new MnuInternoInserirPedido();
+        tela.setVisible(true);
+
+        this.MnuInterno.add(tela);    // TODO add your handling code here:
+    }//GEN-LAST:event_mnuInternoInserirPedidoActionPerformed
+
+    private void mnuInternoReSinteticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuInternoReSinteticoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuInternoReSinteticoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -177,9 +236,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuBar mnuConsProd;
     private javax.swing.JMenuItem mnuInternoConsCli;
     private javax.swing.JMenuItem mnuInternoConsProd;
+    private javax.swing.JMenuItem mnuInternoConsultarPedido;
     private javax.swing.JMenuItem mnuInternoInsCli;
     private javax.swing.JMenuItem mnuInternoInsProd;
+    private javax.swing.JMenuItem mnuInternoInserirPedido;
+    private javax.swing.JMenuItem mnuInternoReAnalitico;
+    private javax.swing.JMenuItem mnuInternoReSintetico;
     private javax.swing.JMenu mnuPedido;
     private javax.swing.JMenu mnuProduto;
+    private javax.swing.JMenu mnuRelatorios;
     // End of variables declaration//GEN-END:variables
 }
