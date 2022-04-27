@@ -4,8 +4,8 @@ package aplicacao;
  *
  * @author michael.lsantos6
  */
-public class Relatorio_Sintetico {
-     public class Relatorio {
+public class Relatorio_Analitico {
+   
 
         float consulVendas;
         String ConsultaNome;
@@ -36,5 +36,4 @@ public class Relatorio_Sintetico {
         }
 
     }
-}
 }
