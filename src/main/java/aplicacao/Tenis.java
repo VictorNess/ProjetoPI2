@@ -5,7 +5,7 @@ package aplicacao;
  * @author michael.lsantos6
  */
 public class Tenis {
-      public class Tenis {
+     
 
         private String cor;
         private String modelo;
@@ -45,4 +45,3 @@ public class Tenis {
         }
 
     }
-}
