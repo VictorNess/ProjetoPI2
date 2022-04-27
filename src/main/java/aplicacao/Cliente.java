@@ -59,7 +59,7 @@ public class Cliente {
             this.sexo = sexo;
         }
 
-        public int getDatNac() {
+        public Date getDatNac() {
             return datNac;
         }
 
