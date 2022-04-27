@@ -7,7 +7,7 @@ import java.util.Date;
  * @author michael.lsantos6
  */
 public class Cliente {
-     public class Cliente {
+     
 
         String nome;
         int CPF;
@@ -63,7 +63,7 @@ public class Cliente {
             return datNac;
         }
 
-        public void setDatNac(int datNac) {
+        public void setDatNac(Date datNac) {
             this.datNac = datNac;
         }
 
@@ -84,4 +84,4 @@ public class Cliente {
         }
 
     }
-}
+
