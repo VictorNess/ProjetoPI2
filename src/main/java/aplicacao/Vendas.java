@@ -8,7 +8,7 @@ import java.util.Date;
  */
 public class Vendas {
     
-    public class Vendas {
+    
 
         int qntEstoque;
         float totalVendas;
@@ -40,4 +40,4 @@ public class Vendas {
 
     }
 
-}
+
