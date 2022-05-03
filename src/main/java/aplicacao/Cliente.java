@@ -15,7 +15,7 @@ public class Cliente {
         String email;
         String sexo;
         Date datNac;
-        String estCivil;
+        String estadCivil;
         int telefone;
 
         public String getNome() {
