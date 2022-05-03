@@ -1,9 +1,7 @@
 package aplicacao;
+import java.util.Date;
 
-/**
- *
- * @author michael.lsantos6
- */
+
 public class Relatorio_Sintetico {
      
      Date dataFinal;
