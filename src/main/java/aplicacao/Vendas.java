@@ -6,12 +6,10 @@ import java.util.Date;
  *
  * @author michael.lsantos6
  */
-public class Vendas {
-    
-    
-
-        int qntEstoque;
-        float totalVendas;
+public class Pedido {
+   
+     
+        float valorVenda;
         Date dataCompra;
 
         public Date getDataCompra() {
@@ -22,20 +20,13 @@ public class Vendas {
             this.dataCompra = dataCompra;
         }
 
-        public int getQntEstoque() {
-            return qntEstoque;
+
+        public float getvalorVenda() {
+            return valorVenda;
         }
 
-        public void setQntEstoque(int qntEstoque) {
-            this.qntEstoque = qntEstoque;
-        }
-
-        public float getTotalVendas() {
-            return totalVendas;
-        }
-
-        public void setTotalVendas(int totalVendas) {
-            this.totalVendas = totalVendas;
+        public void setvalorVenda(int valorVenda) {
+            this.valorVenda = valorVenda;
         }
 
     }
